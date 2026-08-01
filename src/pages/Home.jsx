@@ -1,18 +1,25 @@
-import ThemeToggle from "../components/common/ThemeToggle";
+import CategoriesSection from "../components/home/CategoriesSection";
+import CTASection from "../components/home/CTASection";
+import FeaturedSection from "../components/home/FeaturedSection";
+import HeroSection from "../components/home/HeroSection";
+import SearchSection from "../components/home/SearchSection";
+import StatsSection from "../components/home/StatsSection";
 
 function Home() {
   return (
-    <section className="space-y-6">
-      <h1 className="text-4xl font-bold">
-        UI Component Showcase
-      </h1>
+    <>
+      <HeroSection />
 
-      <p className="text-gray-600 dark:text-gray-400">
-        Build beautiful, reusable React components.
-      </p>
+      <SearchSection />
 
-      <ThemeToggle />
-    </section>
+      <CategoriesSection />
+
+      <FeaturedSection />
+
+      <StatsSection />
+
+      <CTASection />
+    </>
   );
 }
 

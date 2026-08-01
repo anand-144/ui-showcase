@@ -1,8 +1,16 @@
 import React from 'react'
+import PageLayout from '../components/common/PageLayout'
 
 const HeroPage = () => {
   return (
-    <div>HeroPage</div>
+   <div>
+      <PageLayout
+        title="HeroPages"
+        description="Beautiful and reusable HeroPages components."
+      >
+        {/* Accordions showcase */}
+      </PageLayout>
+    </div>
   )
 }
 
