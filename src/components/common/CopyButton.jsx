@@ -12,9 +12,17 @@ function CopyButton({
     try {
       await navigator.clipboard.writeText(code);
 
-      toast.success("Code copied successfully!");
+      toast.success("Code copied to clipboard!", {
+        duration: 2000,
+        position: "top-right",
+      });
     } catch (error) {
-      toast.error("Failed to copy code.");
+      toast.error("Failed to copy code.", {
+        duration: 2000,
+        position: "top-right",
+      });
+
+      console.error(error);
     }
   };
 
