@@ -1,15 +1,17 @@
+import { useState } from "react";
 import {
   User,
-  Mail,
   MessageSquare,
-  FileText,
+  Star,
 } from "lucide-react";
 
 import Form from "../ui/form";
 import Input from "../ui/input";
 import Button from "../ui/button";
 
-function ContactForm() {
+function FeedbackForm() {
+  const [rating, setRating] = useState(0);
+
   const handleSubmit = (e) => {
     e.preventDefault();
   };
@@ -22,34 +24,49 @@ function ContactForm() {
     >
       <Form.Header>
         <Form.Title>
-          Contact Us 📩
+          We'd Love Your Feedback ⭐
         </Form.Title>
 
         <Form.Description>
-          We'd love to hear from you. Fill out the form below and we'll get back to you soon.
+          Tell us about your experience.
         </Form.Description>
       </Form.Header>
 
       <Form.Body>
         <Input
-          placeholder="Full Name"
+          placeholder="Your Name"
           startIcon={<User size={18} />}
-        />
-
-        <Input
-          type="email"
-          placeholder="Email Address"
-          startIcon={<Mail size={18} />}
-        />
-
-        <Input
-          placeholder="Subject"
-          startIcon={<FileText size={18} />}
         />
 
         <div className="space-y-2">
           <label className="text-sm font-medium">
-            Message
+            Rating
+          </label>
+
+          <div className="flex gap-2">
+            {[1, 2, 3, 4, 5].map((star) => (
+              <button
+                key={star}
+                type="button"
+                onClick={() => setRating(star)}
+                className="transition-transform hover:scale-110"
+              >
+                <Star
+                  size={28}
+                  className={
+                    star <= rating
+                      ? "fill-yellow-400 text-yellow-400"
+                      : "text-gray-300"
+                  }
+                />
+              </button>
+            ))}
+          </div>
+        </div>
+
+        <div className="space-y-2">
+          <label className="text-sm font-medium">
+            Feedback
           </label>
 
           <div className="relative">
@@ -60,7 +77,7 @@ function ContactForm() {
 
             <textarea
               rows={5}
-              placeholder="Write your message..."
+              placeholder="Write your feedback..."
               className="w-full rounded-xl border border-gray-300 bg-white py-3 pl-11 pr-4 outline-none transition-all focus:border-indigo-500 focus:ring-4 focus:ring-indigo-100 dark:border-gray-700 dark:bg-gray-950 dark:text-white dark:focus:ring-indigo-900"
             />
           </div>
@@ -69,11 +86,11 @@ function ContactForm() {
 
       <Form.Actions>
         <Button className="w-full">
-          Send Message
+          Submit Feedback
         </Button>
       </Form.Actions>
     </Form>
   );
 }
 
-export default ContactForm;
+export default FeedbackForm;

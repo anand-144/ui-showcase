@@ -1,17 +1,11 @@
 import { useState } from "react";
-import {
-  User,
-  Mail,
-  Lock,
-  Eye,
-  EyeOff,
-} from "lucide-react";
+import { Lock, Eye, EyeOff } from "lucide-react";
 
 import Form from "../ui/form";
 import Input from "../ui/input";
 import Button from "../ui/button";
 
-function RegisterForm() {
+function ResetPasswordForm() {
   const [showPassword, setShowPassword] =
     useState(false);
 
@@ -30,33 +24,18 @@ function RegisterForm() {
     >
       <Form.Header>
         <Form.Title>
-          Create Account 🚀
+          Reset Password 🔑
         </Form.Title>
 
         <Form.Description>
-          Join us by creating your account.
+          Create a new password for your account.
         </Form.Description>
       </Form.Header>
 
       <Form.Body>
         <Input
-          placeholder="Full Name"
-          startIcon={<User size={18} />}
-        />
-
-        <Input
-          type="email"
-          placeholder="Email Address"
-          startIcon={<Mail size={18} />}
-        />
-
-        <Input
-          type={
-            showPassword
-              ? "text"
-              : "password"
-          }
-          placeholder="Password"
+          type={showPassword ? "text" : "password"}
+          placeholder="New Password"
           startIcon={<Lock size={18} />}
           endIcon={
             <button
@@ -101,43 +80,15 @@ function RegisterForm() {
             </button>
           }
         />
-
-        <label className="flex items-start gap-3 text-sm text-gray-600 dark:text-gray-400">
-          <input
-            type="checkbox"
-            className="mt-1 rounded"
-          />
-
-          <span>
-            I agree to the{" "}
-            <button
-              type="button"
-              className="font-medium text-indigo-600 hover:underline"
-            >
-              Terms &
-              Conditions
-            </button>
-          </span>
-        </label>
       </Form.Body>
 
-      <Form.Actions className="flex-col gap-4">
+      <Form.Actions>
         <Button className="w-full">
-          Create Account
+          Reset Password
         </Button>
-
-        <p className="text-center text-sm text-gray-500 dark:text-gray-400">
-          Already have an account?{" "}
-          <button
-            type="button"
-            className="font-semibold text-indigo-600 hover:underline"
-          >
-            Login
-          </button>
-        </p>
       </Form.Actions>
     </Form>
   );
 }
 
-export default RegisterForm;
+export default ResetPasswordForm;
