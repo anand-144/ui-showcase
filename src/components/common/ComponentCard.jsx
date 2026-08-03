@@ -43,7 +43,12 @@ function ComponentCard({
 
       {/* Live Preview */}
       <div className="flex min-h-[180px] items-center justify-center bg-gray-50 p-8 dark:bg-gray-900">
-        {Component && <Component {...props} />}
+        {Component &&
+          (props ? (
+            <Component {...props} />
+          ) : (
+            <Component />
+          ))}
       </div>
 
       {/* Footer */}
@@ -84,11 +89,10 @@ function ComponentCard({
               onClick={() =>
                 setActiveTab("usage")
               }
-              className={`flex-1 py-3 text-sm font-medium transition ${
-                activeTab === "usage"
+              className={`flex-1 py-3 text-sm font-medium transition ${activeTab === "usage"
                   ? "border-b-2 border-indigo-600 text-indigo-600"
                   : "text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              }`}
+                }`}
             >
               Usage
             </button>
@@ -97,11 +101,10 @@ function ComponentCard({
               onClick={() =>
                 setActiveTab("source")
               }
-              className={`flex-1 py-3 text-sm font-medium transition ${
-                activeTab === "source"
+              className={`flex-1 py-3 text-sm font-medium transition ${activeTab === "source"
                   ? "border-b-2 border-indigo-600 text-indigo-600"
                   : "text-gray-500 hover:text-gray-900 dark:hover:text-white"
-              }`}
+                }`}
             >
               Source
             </button>
