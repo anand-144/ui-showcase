@@ -10,9 +10,16 @@ function ComponentCard({
   title,
   component: Component,
   props = {},
-  code,
+  usageCode,
+  sourceCode,
 }) {
   const [showCode, setShowCode] = useState(false);
+  const [activeTab, setActiveTab] = useState("usage");
+
+  const currentCode =
+    activeTab === "usage"
+      ? usageCode
+      : sourceCode;
 
   return (
     <motion.article
@@ -41,10 +48,16 @@ function ComponentCard({
 
       {/* Footer */}
       <div className="flex items-center justify-between border-t border-gray-200 px-6 py-4 dark:border-gray-800">
-        <CopyButton code={code} />
+        <CopyButton
+          code={currentCode}
+          children={
+            activeTab === "usage"
+              ? "Copy Usage"
+              : "Copy Source"
+          }
+        />
 
         <Button
-          variant="primary"
           leftIcon={
             showCode ? (
               <EyeOff size={16} />
@@ -56,14 +69,45 @@ function ComponentCard({
             setShowCode((prev) => !prev)
           }
         >
-          {showCode ? "Hide Code" : "View Code"}
+          {showCode
+            ? "Hide Code"
+            : "View Code"}
         </Button>
       </div>
 
-      {/* Code Preview */}
+      {/* Code */}
       {showCode && (
         <div className="border-t border-gray-200 dark:border-gray-800">
-          <PreviewBox code={code} />
+          {/* Tabs */}
+          <div className="flex border-b border-gray-200 dark:border-gray-800">
+            <button
+              onClick={() =>
+                setActiveTab("usage")
+              }
+              className={`flex-1 py-3 text-sm font-medium transition ${
+                activeTab === "usage"
+                  ? "border-b-2 border-indigo-600 text-indigo-600"
+                  : "text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              }`}
+            >
+              Usage
+            </button>
+
+            <button
+              onClick={() =>
+                setActiveTab("source")
+              }
+              className={`flex-1 py-3 text-sm font-medium transition ${
+                activeTab === "source"
+                  ? "border-b-2 border-indigo-600 text-indigo-600"
+                  : "text-gray-500 hover:text-gray-900 dark:hover:text-white"
+              }`}
+            >
+              Source
+            </button>
+          </div>
+
+          <PreviewBox code={currentCode} />
         </div>
       )}
     </motion.article>

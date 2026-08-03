@@ -19,7 +19,8 @@ function Buttons() {
               title={item.name}
               component={Component}
               props={item.props}
-              code={item.code}
+              usageCode={item.usageCode}
+              sourceCode={item.sourceCode}
             />
           );
         })}

@@ -1,14 +1,22 @@
 import Button from "../components/ui/button";
 
 import {
-  primaryButtonCode,
-  secondaryButtonCode,
-  outlineButtonCode,
-  ghostButtonCode,
-  gradientButtonCode,
-  glassButtonCode,
-  successButtonCode,
-  dangerButtonCode,
+  primaryButtonPreviewCode,
+  primaryButtonSourceCode,
+  secondaryButtonPreviewCode,
+  secondaryButtonSourceCode,
+  outlineButtonPreviewCode,
+  outlineButtonSourceCode,
+  ghostButtonPreviewCode,
+  ghostButtonSourceCode,
+  gradientButtonPreviewCode,
+  gradientButtonSourceCode,
+  glassButtonPreviewCode,
+  glassButtonSourceCode,
+  successButtonPreviewCode,
+  successButtonSourceCode,
+  dangerButtonPreviewCode,
+  dangerButtonSourceCode,
 } from "./buttonData";
 
 export const buttonComponents = [
@@ -20,7 +28,8 @@ export const buttonComponents = [
     props: {
       children: "Primary Button",
     },
-    code: primaryButtonCode,
+    usageCode: primaryButtonPreviewCode,
+    sourceCode: primaryButtonSourceCode,
     tags: ["button", "primary", "cta"],
   },
 
@@ -33,7 +42,8 @@ export const buttonComponents = [
       variant: "secondary",
       children: "Secondary Button",
     },
-    code: secondaryButtonCode,
+    usageCode: secondaryButtonPreviewCode,
+    sourceCode: secondaryButtonSourceCode,
     tags: ["button", "secondary"],
   },
 
@@ -46,7 +56,8 @@ export const buttonComponents = [
       variant: "outline",
       children: "Outline Button",
     },
-    code: outlineButtonCode,
+    usageCode: outlineButtonPreviewCode,
+    sourceCode: outlineButtonSourceCode,
     tags: ["button", "outline"],
   },
 
@@ -59,7 +70,8 @@ export const buttonComponents = [
       variant: "ghost",
       children: "Ghost Button",
     },
-    code: ghostButtonCode,
+    usageCode: ghostButtonPreviewCode,
+    sourceCode: ghostButtonSourceCode,
     tags: ["button", "ghost"],
   },
 
@@ -72,7 +84,8 @@ export const buttonComponents = [
       variant: "gradient",
       children: "Gradient Button",
     },
-    code: gradientButtonCode,
+    usageCode: gradientButtonPreviewCode,
+    sourceCode: gradientButtonSourceCode,
     tags: ["button", "gradient"],
   },
 
@@ -85,7 +98,8 @@ export const buttonComponents = [
       variant: "glass",
       children: "Glass Button",
     },
-    code: glassButtonCode,
+    usageCode: glassButtonPreviewCode,
+    sourceCode: glassButtonSourceCode,
     tags: ["button", "glass"],
   },
 
@@ -98,7 +112,8 @@ export const buttonComponents = [
       variant: "success",
       children: "Success Button",
     },
-    code: successButtonCode,
+    usageCode: successButtonPreviewCode,
+    sourceCode: successButtonSourceCode,
     tags: ["button", "success"],
   },
 
@@ -111,7 +126,8 @@ export const buttonComponents = [
       variant: "danger",
       children: "Danger Button",
     },
-    code: dangerButtonCode,
+    usageCode: dangerButtonPreviewCode,
+    sourceCode: dangerButtonSourceCode,
     tags: ["button", "danger"],
   },
 ];
