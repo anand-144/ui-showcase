@@ -6,6 +6,7 @@ import Home from "../pages/Home";
 import Buttons from "../pages/Buttons";
 import Cards from "../pages/Cards";
 import Forms from "../pages/Forms";
+import Inputs from "../pages/Inputs";
 import Hero from "../pages/HeroPage";
 import Pricing from "../pages/Pricing";
 import Tables from "../pages/Tables";
@@ -26,6 +27,7 @@ function AppRoutes() {
           {/* Future Routes */}
           <Route path="buttons" element={<Buttons />} />
           <Route path="cards" element={<Cards />} />
+          <Route path="inputs" element={<Inputs />} />
           <Route path="forms" element={<Forms />} />
           <Route path="hero" element={<Hero />} />
           <Route path="pricing" element={<Pricing />} />

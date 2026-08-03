@@ -10,6 +10,7 @@ import {
   ChevronDownSquare,
   LoaderCircle,
   PanelsTopLeft,
+  RectangleEllipsis ,
 } from "lucide-react";
 
 export const sidebarLinks = [
@@ -36,6 +37,12 @@ export const sidebarLinks = [
     title: "Cards",
     path: "/cards",
     icon: CreditCard,
+  },
+  {
+    id: "inputs",
+    title: "Inputs",
+    path: "/inputs",
+    icon: RectangleEllipsis,
   },
   {
     id: "forms",
