@@ -23,7 +23,7 @@ export const sidebarLinks = [
   {
     id: "navbarpage",
     title: "Navbar",
-    path: "/navbarpage",
+    path: "/navbar",
     icon: PanelTopDashed  ,
   },
   {

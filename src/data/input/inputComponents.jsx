@@ -1,15 +1,15 @@
-import DefaultInput from "../components/inputs/DefaultInput";
-import FilledInput from "../components/inputs/FilledInput";
-import OutlinedInput from "../components/inputs/OutlinedInput";
-import SearchInput from "../components/inputs/SearchInput";
-import PasswordInput from "../components/inputs/PasswordInput";
-import FloatingInput from "../components/inputs/FloatingInput";
-import OTPInput from "../components/inputs/OTPInput";
-import TextareaInput from "../components/inputs/TextareaInput";
-import NumberInput from "../components/inputs/NumberInput";
-import EmailInput from "../components/inputs/EmailInput";
-import ErrorInput from "../components/inputs/ErrorInput";
-import DisabledInput from "../components/inputs/DisabledInput";
+import DefaultInput from "../../components/inputs/DefaultInput";
+import FilledInput from "../../components/inputs/FilledInput";
+import OutlinedInput from "../../components/inputs/OutlinedInput";
+import SearchInput from "../../components/inputs/SearchInput";
+import PasswordInput from "../../components/inputs/PasswordInput";
+import FloatingInput from "../../components/inputs/FloatingInput";
+import OTPInput from "../../components/inputs/OTPInput";
+import TextareaInput from "../../components/inputs/TextareaInput";
+import NumberInput from "../../components/inputs/NumberInput";
+import EmailInput from "../../components/inputs/EmailInput";
+import ErrorInput from "../../components/inputs/ErrorInput";
+import DisabledInput from "../../components/inputs/DisabledInput";
 
 import {
   defaultInputUsageCode,

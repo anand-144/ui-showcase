@@ -4,7 +4,7 @@ import PageLayout from "../components/common/PageLayout";
 import ComponentCard from "../components/common/ComponentCard";
 import Button from "../components/ui/button";
 
-import { cardComponents } from "../data/cardComponents";
+import { cardComponents } from "../data/card/cardComponents";
 
 const ITEMS_PER_LOAD = 4;
 

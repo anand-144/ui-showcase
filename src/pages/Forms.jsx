@@ -1,7 +1,7 @@
 import PageLayout from "../components/common/PageLayout";
 import ComponentCard from "../components/common/ComponentCard";
 
-import { formComponents } from "../data/formComponents";
+import { formComponents } from "../data/form/formComponents";
 import Button from "../components/ui/button";
 import { useState } from "react";
 

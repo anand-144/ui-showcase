@@ -1,7 +1,7 @@
 import PageLayout from "../components/common/PageLayout";
 import ComponentCard from "../components/common/ComponentCard";
 
-import { inputComponents } from "../data/inputComponents";
+import { inputComponents } from "../data/input/inputComponents";
 
 function Inputs() {
   return (

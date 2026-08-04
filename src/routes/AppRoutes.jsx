@@ -36,7 +36,7 @@ function AppRoutes() {
           <Route path="accordion" element={<Accordion />} />
           <Route path="loaders" element={<Loaders />} />
           <Route path="favorites" element={<Favorites />} />
-          <Route path="navbarpage" element={<NavbarPage />} />
+          <Route path="navbar" element={<NavbarPage />} />
 
           {/* 404 */}
           <Route path="*" element={<NotFound />} />

@@ -1,7 +1,7 @@
 import PageLayout from "../components/common/PageLayout";
 import ComponentCard from "../components/common/ComponentCard";
 
-import { buttonComponents } from "../data/buttonComponents";
+import { buttonComponents } from "../data/button/buttonComponents";
 
 function Buttons() {
   return (

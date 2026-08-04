@@ -1,13 +1,13 @@
-import LoginForm from "../components/forms/LoginForm";
-import RegisterForm from "../components/forms/RegisterForm";
-import ContactForm from "../components/forms/ContactForm";
-import Newsletter from "../components/forms/Newsletter";
-import ForgotPasswordForm from "../components/forms/ForgotPasswordForm";
-import ResetPasswordForm from "../components/forms/ResetPasswordForm";
-import FeedbackForm from "../components/forms/FeedbackForm";
-import CheckoutForm from "../components/forms/CheckoutForm";
-import ProfileForm from "../components/forms/ProfileForm";
-import MultiStepForm from "../components/forms/MultiStepForm";
+import LoginForm from "../../components/forms/LoginForm";
+import RegisterForm from "../../components/forms/RegisterForm";
+import ContactForm from "../../components/forms/ContactForm";
+import Newsletter from "../../components/forms/Newsletter";
+import ForgotPasswordForm from "../../components/forms/ForgotPasswordForm";
+import ResetPasswordForm from "../../components/forms/ResetPasswordForm";
+import FeedbackForm from "../../components/forms/FeedbackForm";
+import CheckoutForm from "../../components/forms/CheckoutForm";
+import ProfileForm from "../../components/forms/ProfileForm";
+import MultiStepForm from "../../components/forms/MultiStepForm";
 
 import {
   loginFormUsageCode,

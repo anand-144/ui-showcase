@@ -1,13 +1,13 @@
 import React from "react";
-import Card from "../components/ui/card";
+import Card from "../../components/ui/card";
 
-import ProfileCard from "../components/cards/ProfileCard";
-import ProductCard from "../components/cards/ProductCard";
-import BlogCard from "../components/cards/BlogCard";
-import PricingCard from "../components/cards/PricingCard";
-import StatsCard from "../components/cards/StatsCard";
-import FeatureCard from "../components/cards/FeatureCard";
-import TeamCard from "../components/cards/TeamCard";
+import ProfileCard from "../../components/cards/ProfileCard";
+import ProductCard from "../../components/cards/ProductCard";
+import BlogCard from "../../components/cards/BlogCard";
+import PricingCard from "../../components/cards/PricingCard";
+import StatsCard from "../../components/cards/StatsCard";
+import FeatureCard from "../../components/cards/FeatureCard";
+import TeamCard from "../../components/cards/TeamCard";
 
 import {
   defaultCardUsageCode,
