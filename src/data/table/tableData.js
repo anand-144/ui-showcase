@@ -6,35 +6,46 @@ export default function Example() {
 }
 `;
 
+/* -------------------------------------------------------------------------- */
+/*                                 Usage Code                                 */
+/* -------------------------------------------------------------------------- */
+
 export const simpleTableUsageCode = createCode("SimpleTable");
-export const simpleTableSourceCode = simpleTableUsageCode;
-
 export const stripedTableUsageCode = createCode("StripedTable");
-export const stripedTableSourceCode = stripedTableUsageCode;
-
 export const hoverTableUsageCode = createCode("HoverTable");
-export const hoverTableSourceCode = hoverTableUsageCode;
-
 export const borderedTableUsageCode = createCode("BorderedTable");
-export const borderedTableSourceCode = borderedTableUsageCode;
-
 export const compactTableUsageCode = createCode("CompactTable");
-export const compactTableSourceCode = compactTableUsageCode;
-
 export const pricingTableUsageCode = createCode("PricingTable");
-export const pricingTableSourceCode = pricingTableUsageCode;
-
 export const sortableTableUsageCode = createCode("SortableTable");
-export const sortableTableSourceCode = sortableTableUsageCode;
-
 export const searchTableUsageCode = createCode("SearchTable");
-export const searchTableSourceCode = searchTableUsageCode;
-
 export const paginationTableUsageCode = createCode("PaginationTable");
-export const paginationTableSourceCode = paginationTableUsageCode;
-
 export const expandableTableUsageCode = createCode("ExpandableTable");
-export const expandableTableSourceCode = expandableTableUsageCode;
-
 export const responsiveTableUsageCode = createCode("ResponsiveTable");
-export const responsiveTableSourceCode = responsiveTableUsageCode;
+
+/* -------------------------------------------------------------------------- */
+/*                                Source Code                                 */
+/* -------------------------------------------------------------------------- */
+
+import simpleTableRaw from "../../components/tables/SimpleTable.jsx?raw";
+import stripedTableRaw from "../../components/tables/StripedTable.jsx?raw";
+import hoverTableRaw from "../../components/tables/HoverTable.jsx?raw";
+import borderedTableRaw from "../../components/tables/BorderedTable.jsx?raw";
+import compactTableRaw from "../../components/tables/CompactTable.jsx?raw";
+import pricingTableRaw from "../../components/tables/PricingTable.jsx?raw";
+import sortableTableRaw from "../../components/tables/SortableTable.jsx?raw";
+import searchTableRaw from "../../components/tables/SearchTable.jsx?raw";
+import paginationTableRaw from "../../components/tables/PaginationTable.jsx?raw";
+import expandableTableRaw from "../../components/tables/ExpandableTable.jsx?raw";
+import responsiveTableRaw from "../../components/tables/ResponsiveTable.jsx?raw";
+
+export const simpleTableSourceCode = simpleTableRaw;
+export const stripedTableSourceCode = stripedTableRaw;
+export const hoverTableSourceCode = hoverTableRaw;
+export const borderedTableSourceCode = borderedTableRaw;
+export const compactTableSourceCode = compactTableRaw;
+export const pricingTableSourceCode = pricingTableRaw;
+export const sortableTableSourceCode = sortableTableRaw;
+export const searchTableSourceCode = searchTableRaw;
+export const paginationTableSourceCode = paginationTableRaw;
+export const expandableTableSourceCode = expandableTableRaw;
+export const responsiveTableSourceCode = responsiveTableRaw;

@@ -128,7 +128,7 @@ function Footer() {
           <p>© {new Date().getFullYear()} UI Showcase. All rights reserved.</p>
 
           <p className="flex items-center gap-2">
-            Built with <FaHeart size={16} className="fill-red-500 text-red-500" /> using React & Tailwind CSS
+            Built with <FaHeart size={16} className="fill-red-500 text-red-500" /> using Vite & Tailwind CSS
           </p>
         </div>
       </div>

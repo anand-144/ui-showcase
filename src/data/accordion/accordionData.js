@@ -6,35 +6,46 @@ export default function Example() {
 }
 `;
 
+/* -------------------------------------------------------------------------- */
+/*                                 Usage Code                                 */
+/* -------------------------------------------------------------------------- */
+
 export const faqAccordionUsageCode = createCode("FAQAccordion");
-export const faqAccordionSourceCode = faqAccordionUsageCode;
-
 export const iconAccordionUsageCode = createCode("IconAccordion");
-export const iconAccordionSourceCode = iconAccordionUsageCode;
-
 export const multiOpenAccordionUsageCode = createCode("MultiOpenAccordion");
-export const multiOpenAccordionSourceCode = multiOpenAccordionUsageCode;
-
 export const nestedAccordionUsageCode = createCode("NestedAccordion");
-export const nestedAccordionSourceCode = nestedAccordionUsageCode;
-
 export const animatedAccordionUsageCode = createCode("AnimatedAccordion");
-export const animatedAccordionSourceCode = animatedAccordionUsageCode;
-
 export const glassAccordionUsageCode = createCode("GlassAccordion");
-export const glassAccordionSourceCode = glassAccordionUsageCode;
-
 export const timelineAccordionUsageCode = createCode("TimelineAccordion");
-export const timelineAccordionSourceCode = timelineAccordionUsageCode;
-
 export const settingsAccordionUsageCode = createCode("SettingsAccordion");
-export const settingsAccordionSourceCode = settingsAccordionUsageCode;
-
 export const pricingAccordionUsageCode = createCode("PricingAccordion");
-export const pricingAccordionSourceCode = pricingAccordionUsageCode;
-
 export const documentationAccordionUsageCode = createCode("DocumentationAccordion");
-export const documentationAccordionSourceCode = documentationAccordionUsageCode;
-
 export const productAccordionUsageCode = createCode("ProductAccordion");
-export const productAccordionSourceCode = productAccordionUsageCode;
+
+/* -------------------------------------------------------------------------- */
+/*                                Source Code                                 */
+/* -------------------------------------------------------------------------- */
+
+import faqAccordionRaw from "../../components/accordion/FAQAccordion.jsx?raw";
+import iconAccordionRaw from "../../components/accordion/IconAccordion.jsx?raw";
+import multiOpenAccordionRaw from "../../components/accordion/MultiOpenAccordion.jsx?raw";
+import nestedAccordionRaw from "../../components/accordion/NestedAccordion.jsx?raw";
+import animatedAccordionRaw from "../../components/accordion/AnimatedAccordion.jsx?raw";
+import glassAccordionRaw from "../../components/accordion/GlassAccordion.jsx?raw";
+import timelineAccordionRaw from "../../components/accordion/TimelineAccordion.jsx?raw";
+import settingsAccordionRaw from "../../components/accordion/SettingsAccordion.jsx?raw";
+import pricingAccordionRaw from "../../components/accordion/PricingAccordion.jsx?raw";
+import documentationAccordionRaw from "../../components/accordion/DocumentationAccordion.jsx?raw";
+import productAccordionRaw from "../../components/accordion/ProductAccordion.jsx?raw";
+
+export const faqAccordionSourceCode = faqAccordionRaw;
+export const iconAccordionSourceCode = iconAccordionRaw;
+export const multiOpenAccordionSourceCode = multiOpenAccordionRaw;
+export const nestedAccordionSourceCode = nestedAccordionRaw;
+export const animatedAccordionSourceCode = animatedAccordionRaw;
+export const glassAccordionSourceCode = glassAccordionRaw;
+export const timelineAccordionSourceCode = timelineAccordionRaw;
+export const settingsAccordionSourceCode = settingsAccordionRaw;
+export const pricingAccordionSourceCode = pricingAccordionRaw;
+export const documentationAccordionSourceCode = documentationAccordionRaw;
+export const productAccordionSourceCode = productAccordionRaw;

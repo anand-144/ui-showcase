@@ -1,164 +1,51 @@
-/* -------------------------------------------------------------------------- */
-/*                             Simple Pricing                                 */
-/* -------------------------------------------------------------------------- */
-
-export const simplePricingUsageCode = `
-import SimplePricing from "@/components/pricing/SimplePricing";
+const createCode = (name) => `
+import ${name} from "@/components/pricing/${name}";
 
 export default function Example() {
-  return <SimplePricing />;
+  return <${name} />;
 }
 `;
 
-export const simplePricingSourceCode =
-  simplePricingUsageCode;
-
 /* -------------------------------------------------------------------------- */
-/*                          Three Tier Pricing                                */
+/*                                 Usage Code                                 */
 /* -------------------------------------------------------------------------- */
 
-export const threeTierPricingUsageCode = `
-import ThreeTierPricing from "@/components/pricing/ThreeTierPricing";
-
-export default function Example() {
-  return <ThreeTierPricing />;
-}
-`;
-
-export const threeTierPricingSourceCode =
-  threeTierPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                            Toggle Pricing                                  */
-/* -------------------------------------------------------------------------- */
-
-export const togglePricingUsageCode = `
-import TogglePricing from "@/components/pricing/TogglePricing";
-
-export default function Example() {
-  return <TogglePricing />;
-}
-`;
-
-export const togglePricingSourceCode =
-  togglePricingUsageCode;
+export const simplePricingUsageCode = createCode("SimplePricing");
+export const threeTierPricingUsageCode = createCode("ThreeTierPricing");
+export const togglePricingUsageCode = createCode("TogglePricing");
+export const popularPricingUsageCode = createCode("PopularPricing");
+export const gradientPricingUsageCode = createCode("GradientPricing");
+export const glassPricingUsageCode = createCode("GlassPricing");
+export const darkPricingUsageCode = createCode("DarkPricing");
+export const saasPricingUsageCode = createCode("SaaSPricing");
+export const enterprisePricingUsageCode = createCode("EnterprisePricing");
+export const comparisonPricingUsageCode = createCode("ComparisonPricing");
+export const faqPricingUsageCode = createCode("FAQPricing");
 
 /* -------------------------------------------------------------------------- */
-/*                           Popular Pricing                                  */
+/*                                Source Code                                 */
 /* -------------------------------------------------------------------------- */
 
-export const popularPricingUsageCode = `
-import PopularPricing from "@/components/pricing/PopularPricing";
+import simplePricingRaw from "../../components/pricing/SimplePricing.jsx?raw";
+import threeTierPricingRaw from "../../components/pricing/ThreeTierPricing.jsx?raw";
+import togglePricingRaw from "../../components/pricing/TogglePricing.jsx?raw";
+import popularPricingRaw from "../../components/pricing/PopularPricing.jsx?raw";
+import gradientPricingRaw from "../../components/pricing/GradientPricing.jsx?raw";
+import glassPricingRaw from "../../components/pricing/GlassPricing.jsx?raw";
+import darkPricingRaw from "../../components/pricing/DarkPricing.jsx?raw";
+import saasPricingRaw from "../../components/pricing/SaaSPricing.jsx?raw";
+import enterprisePricingRaw from "../../components/pricing/EnterprisePricing.jsx?raw";
+import comparisonPricingRaw from "../../components/pricing/ComparisonPricing.jsx?raw";
+import faqPricingRaw from "../../components/pricing/FAQPricing.jsx?raw";
 
-export default function Example() {
-  return <PopularPricing />;
-}
-`;
-
-export const popularPricingSourceCode =
-  popularPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                           Gradient Pricing                                 */
-/* -------------------------------------------------------------------------- */
-
-export const gradientPricingUsageCode = `
-import GradientPricing from "@/components/pricing/GradientPricing";
-
-export default function Example() {
-  return <GradientPricing />;
-}
-`;
-
-export const gradientPricingSourceCode =
-  gradientPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                            Glass Pricing                                   */
-/* -------------------------------------------------------------------------- */
-
-export const glassPricingUsageCode = `
-import GlassPricing from "@/components/pricing/GlassPricing";
-
-export default function Example() {
-  return <GlassPricing />;
-}
-`;
-
-export const glassPricingSourceCode =
-  glassPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                             Dark Pricing                                   */
-/* -------------------------------------------------------------------------- */
-
-export const darkPricingUsageCode = `
-import DarkPricing from "@/components/pricing/DarkPricing";
-
-export default function Example() {
-  return <DarkPricing />;
-}
-`;
-
-export const darkPricingSourceCode =
-  darkPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                             SaaS Pricing                                   */
-/* -------------------------------------------------------------------------- */
-
-export const saasPricingUsageCode = `
-import SaaSPricing from "@/components/pricing/SaaSPricing";
-
-export default function Example() {
-  return <SaaSPricing />;
-}
-`;
-
-export const saasPricingSourceCode =
-  saasPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                         Enterprise Pricing                                 */
-/* -------------------------------------------------------------------------- */
-
-export const enterprisePricingUsageCode = `
-import EnterprisePricing from "@/components/pricing/EnterprisePricing";
-
-export default function Example() {
-  return <EnterprisePricing />;
-}
-`;
-
-export const enterprisePricingSourceCode =
-  enterprisePricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                        Comparison Pricing                                  */
-/* -------------------------------------------------------------------------- */
-
-export const comparisonPricingUsageCode = `
-import ComparisonPricing from "@/components/pricing/ComparisonPricing";
-
-export default function Example() {
-  return <ComparisonPricing />;
-}
-`;
-
-export const comparisonPricingSourceCode =
-  comparisonPricingUsageCode;
-
-/* -------------------------------------------------------------------------- */
-/*                             FAQ Pricing                                    */
-/* -------------------------------------------------------------------------- */
-
-export const faqPricingUsageCode = `
-import FAQPricing from "@/components/pricing/FAQPricing";
-
-export default function Example() {
-  return <FAQPricing />;
-}
-`;
-
-export const faqPricingSourceCode =
-  faqPricingUsageCode;
+export const simplePricingSourceCode = simplePricingRaw;
+export const threeTierPricingSourceCode = threeTierPricingRaw;
+export const togglePricingSourceCode = togglePricingRaw;
+export const popularPricingSourceCode = popularPricingRaw;
+export const gradientPricingSourceCode = gradientPricingRaw;
+export const glassPricingSourceCode = glassPricingRaw;
+export const darkPricingSourceCode = darkPricingRaw;
+export const saasPricingSourceCode = saasPricingRaw;
+export const enterprisePricingSourceCode = enterprisePricingRaw;
+export const comparisonPricingSourceCode = comparisonPricingRaw;
+export const faqPricingSourceCode = faqPricingRaw;

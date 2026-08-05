@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------- */
-/*                               Simple Navbar                                */
+/*                                 Usage Code                                 */
 /* -------------------------------------------------------------------------- */
 
 export const simpleNavbarUsageCode = `
@@ -10,18 +10,6 @@ export default function Example() {
 }
 `;
 
-export const simpleNavbarSourceCode = `
-import SimpleNavbar from "@/components/navbars/SimpleNavbar";
-
-export default function Example() {
-  return <SimpleNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                             Dashboard Navbar                               */
-/* -------------------------------------------------------------------------- */
-
 export const dashboardNavbarUsageCode = `
 import DashboardNavbar from "@/components/navbars/DashboardNavbar";
 
@@ -29,18 +17,6 @@ export default function Example() {
   return <DashboardNavbar />;
 }
 `;
-
-export const dashboardNavbarSourceCode = `
-import DashboardNavbar from "@/components/navbars/DashboardNavbar";
-
-export default function Example() {
-  return <DashboardNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                             Ecommerce Navbar                               */
-/* -------------------------------------------------------------------------- */
 
 export const ecommerceNavbarUsageCode = `
 import EcommerceNavbar from "@/components/navbars/EcommerceNavbar";
@@ -50,18 +26,6 @@ export default function Example() {
 }
 `;
 
-export const ecommerceNavbarSourceCode = `
-import EcommerceNavbar from "@/components/navbars/EcommerceNavbar";
-
-export default function Example() {
-  return <EcommerceNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                             Mega Menu Navbar                               */
-/* -------------------------------------------------------------------------- */
-
 export const megaMenuNavbarUsageCode = `
 import MegaMenuNavbar from "@/components/navbars/MegaMenuNavbar";
 
@@ -69,18 +33,6 @@ export default function Example() {
   return <MegaMenuNavbar />;
 }
 `;
-
-export const megaMenuNavbarSourceCode = `
-import MegaMenuNavbar from "@/components/navbars/MegaMenuNavbar";
-
-export default function Example() {
-  return <MegaMenuNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                               Auth Navbar                                  */
-/* -------------------------------------------------------------------------- */
 
 export const authNavbarUsageCode = `
 import AuthNavbar from "@/components/navbars/AuthNavbar";
@@ -90,18 +42,6 @@ export default function Example() {
 }
 `;
 
-export const authNavbarSourceCode = `
-import AuthNavbar from "@/components/navbars/AuthNavbar";
-
-export default function Example() {
-  return <AuthNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                              Mobile Navbar                                 */
-/* -------------------------------------------------------------------------- */
-
 export const mobileNavbarUsageCode = `
 import MobileNavbar from "@/components/navbars/MobileNavbar";
 
@@ -109,18 +49,6 @@ export default function Example() {
   return <MobileNavbar />;
 }
 `;
-
-export const mobileNavbarSourceCode = `
-import MobileNavbar from "@/components/navbars/MobileNavbar";
-
-export default function Example() {
-  return <MobileNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                           Transparent Navbar                               */
-/* -------------------------------------------------------------------------- */
 
 export const transparentNavbarUsageCode = `
 import TransparentNavbar from "@/components/navbars/TransparentNavbar";
@@ -130,18 +58,6 @@ export default function Example() {
 }
 `;
 
-export const transparentNavbarSourceCode = `
-import TransparentNavbar from "@/components/navbars/TransparentNavbar";
-
-export default function Example() {
-  return <TransparentNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                              Sticky Navbar                                 */
-/* -------------------------------------------------------------------------- */
-
 export const stickyNavbarUsageCode = `
 import StickyNavbar from "@/components/navbars/StickyNavbar";
 
@@ -149,18 +65,6 @@ export default function Example() {
   return <StickyNavbar />;
 }
 `;
-
-export const stickyNavbarSourceCode = `
-import StickyNavbar from "@/components/navbars/StickyNavbar";
-
-export default function Example() {
-  return <StickyNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                              Search Navbar                                 */
-/* -------------------------------------------------------------------------- */
 
 export const searchNavbarUsageCode = `
 import SearchNavbar from "@/components/navbars/SearchNavbar";
@@ -170,18 +74,6 @@ export default function Example() {
 }
 `;
 
-export const searchNavbarSourceCode = `
-import SearchNavbar from "@/components/navbars/SearchNavbar";
-
-export default function Example() {
-  return <SearchNavbar />;
-}
-`;
-
-/* -------------------------------------------------------------------------- */
-/*                             Centered Navbar                                */
-/* -------------------------------------------------------------------------- */
-
 export const centeredNavbarUsageCode = `
 import CenteredNavbar from "@/components/navbars/CenteredNavbar";
 
@@ -190,10 +82,28 @@ export default function Example() {
 }
 `;
 
-export const centeredNavbarSourceCode = `
-import CenteredNavbar from "@/components/navbars/CenteredNavbar";
+/* -------------------------------------------------------------------------- */
+/*                                Source Code                                 */
+/* -------------------------------------------------------------------------- */
 
-export default function Example() {
-  return <CenteredNavbar />;
-}
-`;
+import simpleNavbarRaw from "../../components/navbars/SimpleNavbar.jsx?raw";
+import dashboardNavbarRaw from "../../components/navbars/DashboardNavbar.jsx?raw";
+import ecommerceNavbarRaw from "../../components/navbars/EcommerceNavbar.jsx?raw";
+import megaMenuNavbarRaw from "../../components/navbars/MegaMenuNavbar.jsx?raw";
+import authNavbarRaw from "../../components/navbars/AuthNavbar.jsx?raw";
+import mobileNavbarRaw from "../../components/navbars/MobileNavbar.jsx?raw";
+import transparentNavbarRaw from "../../components/navbars/TransparentNavbar.jsx?raw";
+import stickyNavbarRaw from "../../components/navbars/StickyNavbar.jsx?raw";
+import searchNavbarRaw from "../../components/navbars/SearchNavbar.jsx?raw";
+import centeredNavbarRaw from "../../components/navbars/CenteredNavbar.jsx?raw";
+
+export const simpleNavbarSourceCode = simpleNavbarRaw;
+export const dashboardNavbarSourceCode = dashboardNavbarRaw;
+export const ecommerceNavbarSourceCode = ecommerceNavbarRaw;
+export const megaMenuNavbarSourceCode = megaMenuNavbarRaw;
+export const authNavbarSourceCode = authNavbarRaw;
+export const mobileNavbarSourceCode = mobileNavbarRaw;
+export const transparentNavbarSourceCode = transparentNavbarRaw;
+export const stickyNavbarSourceCode = stickyNavbarRaw;
+export const searchNavbarSourceCode = searchNavbarRaw;
+export const centeredNavbarSourceCode = centeredNavbarRaw;
