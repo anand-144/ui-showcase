@@ -5,6 +5,8 @@ import { Link } from "react-router-dom";
 import ThemeToggle from "../common/ThemeToggle";
 import { useNavigation } from "../../context/NavigationContext";
 
+import SearchBar from "../common/SearchBar";
+
 function Navbar() {
   const { toggleSidebar } = useNavigation();
 
@@ -39,19 +41,8 @@ function Navbar() {
         </div>
 
         {/* Center */}
-        <div className="hidden w-full max-w-md items-center lg:flex">
-          <div className="relative w-full">
-            <FaSearch
-              size={18}
-              className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400"
-            />
-
-            <input
-              type="text"
-              placeholder="Search components..."
-              className="w-full rounded-lg border border-gray-200 bg-transparent py-2 pl-10 pr-4 outline-none transition focus:border-black dark:border-gray-700 dark:focus:border-white"
-            />
-          </div>
+        <div className="hidden w-full max-w-md lg:flex">
+          <SearchBar />
         </div>
 
         {/* Right */}
