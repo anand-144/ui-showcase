@@ -4,25 +4,17 @@ export const searchData = [
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "gradient-button",
-    title: "Gradient Button",
-    category: "Buttons",
+    id: "buttons",
+    title: "Buttons",
+    category: "Components",
     path: "/buttons",
-    tags: ["button", "gradient", "primary"],
-  },
-  {
-    id: "outline-button",
-    title: "Outline Button",
-    category: "Buttons",
-    path: "/buttons",
-    tags: ["button", "outline"],
-  },
-  {
-    id: "icon-button",
-    title: "Icon Button",
-    category: "Buttons",
-    path: "/buttons",
-    tags: ["button", "icon"],
+    tags: [
+      "button",
+      "buttons",
+      "ui",
+      "react",
+      "tailwind",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
@@ -30,159 +22,186 @@ export const searchData = [
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "profile-card",
-    title: "Profile Card",
-    category: "Cards",
+    id: "cards",
+    title: "Cards",
+    category: "Components",
     path: "/cards",
-    tags: ["card", "profile"],
-  },
-  {
-    id: "pricing-card",
-    title: "Pricing Card",
-    category: "Cards",
-    path: "/cards",
-    tags: ["card", "pricing"],
-  },
-
-  /* -------------------------------------------------------------------------- */
-  /*                                   Hero                                     */
-  /* -------------------------------------------------------------------------- */
-
-  {
-    id: "gradient-hero",
-    title: "Gradient Hero",
-    category: "Hero",
-    path: "/hero",
-    tags: ["hero", "landing"],
-  },
-  {
-    id: "saas-hero",
-    title: "SaaS Hero",
-    category: "Hero",
-    path: "/hero",
-    tags: ["hero", "saas"],
-  },
-  {
-    id: "dashboard-hero",
-    title: "Dashboard Hero",
-    category: "Hero",
-    path: "/hero",
-    tags: ["dashboard", "hero"],
-  },
-  {
-    id: "glass-hero",
-    title: "Glass Hero",
-    category: "Hero",
-    path: "/hero",
-    tags: ["glass", "hero"],
+    tags: [
+      "card",
+      "cards",
+      "profile",
+      "pricing",
+      "blog",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
-  /*                                 Pricing                                    */
+  /*                                   Forms                                    */
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "toggle-pricing",
-    title: "Toggle Pricing",
-    category: "Pricing",
+    id: "forms",
+    title: "Forms",
+    category: "Components",
+    path: "/forms",
+    tags: [
+      "form",
+      "forms",
+      "login",
+      "register",
+      "contact",
+    ],
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Inputs                                   */
+  /* -------------------------------------------------------------------------- */
+
+  {
+    id: "inputs",
+    title: "Inputs",
+    category: "Components",
+    path: "/inputs",
+    tags: [
+      "input",
+      "textfield",
+      "textarea",
+      "search",
+    ],
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                   Navbar                                   */
+  /* -------------------------------------------------------------------------- */
+
+  {
+    id: "navbar",
+    title: "Navbars",
+    category: "Navigation",
+    path: "/navbar",
+    tags: [
+      "navbar",
+      "navigation",
+      "header",
+      "menu",
+    ],
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                    Hero                                    */
+  /* -------------------------------------------------------------------------- */
+
+  {
+    id: "hero",
+    title: "Hero Sections",
+    category: "Marketing",
+    path: "/hero",
+    tags: [
+      "hero",
+      "landing",
+      "banner",
+      "marketing",
+    ],
+  },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                  Pricing                                   */
+  /* -------------------------------------------------------------------------- */
+
+  {
+    id: "pricing",
+    title: "Pricing",
+    category: "Marketing",
     path: "/pricing",
-    tags: ["pricing", "monthly", "yearly"],
-  },
-  {
-    id: "saas-pricing",
-    title: "SaaS Pricing",
-    category: "Pricing",
-    path: "/pricing",
-    tags: ["pricing", "saas"],
+    tags: [
+      "pricing",
+      "plans",
+      "subscription",
+      "billing",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
-  /*                                  Tables                                    */
+  /*                                   Tables                                   */
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "search-table",
-    title: "Search Table",
-    category: "Tables",
+    id: "tables",
+    title: "Tables",
+    category: "Data Display",
     path: "/tables",
-    tags: ["table", "search"],
-  },
-  {
-    id: "pagination-table",
-    title: "Pagination Table",
-    category: "Tables",
-    path: "/tables",
-    tags: ["table", "pagination"],
-  },
-  {
-    id: "responsive-table",
-    title: "Responsive Table",
-    category: "Tables",
-    path: "/tables",
-    tags: ["table", "responsive"],
+    tags: [
+      "table",
+      "data",
+      "grid",
+      "pagination",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
-  /*                                 Timeline                                   */
+  /*                                  Timeline                                  */
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "vertical-timeline",
-    title: "Vertical Timeline",
-    category: "Timeline",
+    id: "timeline",
+    title: "Timeline",
+    category: "Data Display",
     path: "/timeline",
-    tags: ["timeline", "vertical"],
-  },
-  {
-    id: "roadmap-timeline",
-    title: "Roadmap Timeline",
-    category: "Timeline",
-    path: "/timeline",
-    tags: ["timeline", "roadmap"],
+    tags: [
+      "timeline",
+      "history",
+      "roadmap",
+      "progress",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
-  /*                                Accordion                                   */
+  /*                                 Accordion                                  */
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "faq-accordion",
-    title: "FAQ Accordion",
-    category: "Accordion",
+    id: "accordion",
+    title: "Accordion",
+    category: "Data Display",
     path: "/accordion",
-    tags: ["faq", "accordion"],
-  },
-  {
-    id: "settings-accordion",
-    title: "Settings Accordion",
-    category: "Accordion",
-    path: "/accordion",
-    tags: ["settings", "accordion"],
+    tags: [
+      "accordion",
+      "faq",
+      "collapse",
+      "expand",
+    ],
   },
 
   /* -------------------------------------------------------------------------- */
-  /*                                  Loader                                    */
+  /*                                   Loader                                   */
   /* -------------------------------------------------------------------------- */
 
   {
-    id: "spinner-loader",
-    title: "Spinner Loader",
-    category: "Loader",
+    id: "loader",
+    title: "Loaders",
+    category: "Feedback",
     path: "/loader",
-    tags: ["spinner", "loader"],
+    tags: [
+      "loader",
+      "loading",
+      "spinner",
+      "skeleton",
+    ],
   },
+
+  /* -------------------------------------------------------------------------- */
+  /*                                 Favorites                                  */
+  /* -------------------------------------------------------------------------- */
+
   {
-    id: "orbit-loader",
-    title: "Orbit Loader",
-    category: "Loader",
-    path: "/loader",
-    tags: ["orbit", "loader"],
-  },
-  {
-    id: "page-loader",
-    title: "Page Loader",
-    category: "Loader",
-    path: "/loader",
-    tags: ["page", "loader"],
+    id: "favorites",
+    title: "Favorites",
+    category: "Library",
+    path: "/favorites",
+    tags: [
+      "favorites",
+      "bookmark",
+      "saved",
+    ],
   },
 ];
