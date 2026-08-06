@@ -18,11 +18,7 @@ Perfect for developers who want copy-paste ready components for their next proje
 
 # 📸 Preview
 
-> Add screenshots here after deployment.
 
-| Home | Components | Example |
-|------|------------|----------|
-| Screenshot | Screenshot | Screenshot |
 
 ---
 
