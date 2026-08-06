@@ -19,3 +19,12 @@ body {
 .dark body {
   @apply bg-gray-950 text-white;
 }
+
+.scrollbar-hide {
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
